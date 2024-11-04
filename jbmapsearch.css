@@ -1,0 +1,154 @@
+.explorer {
+    position: relative;
+  }
+  
+  .explorer-map {
+    width: 100%;
+    height: 500px;
+    background-color: #F8F8F8;
+  }
+  
+  .explorer--text {
+    font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Helvetica', 'Arial',
+      'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #171417;
+  }
+  
+  .explorer--secondary-text {
+    color: #959B9E;
+    font-size: 14px;
+  }
+  
+  .explorer--bold {
+    font-weight: 500;
+  }
+  
+  .explorer--background-icon {
+    background-size: 16px !important;
+    background-position-x: 16px !important;
+    background-position-y: 50% !important;
+    background-repeat: no-repeat !important;
+  }
+  
+  @media only screen and (min-width: 640px) {
+    #explorer-search {
+      width: 400px !important;
+    }
+  }
+  
+  #explorer-search {
+    box-sizing: border-box;
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    padding: 8px 16px;
+    padding-left: 48px;
+    width: 85%;
+    height: 40px;
+    background-color: #FFFFFF;
+    border: 1px solid #E0DDDE;
+    border-radius: 4px;
+    background-image: url('https://files.readme.io/1bc7c8b-searchIcon.svg');
+  }
+  
+  #explorer-search:hover,
+  #explorer-search:focus {
+    outline: none;
+    border-color: #3333FF;
+  }
+  
+  #explorer-dropdown {
+    display: none;
+    position: absolute;
+    top: 68px;
+    left: 24px;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    border: 1px solid #F4F4F4;
+    width: 400px;
+    z-index: 1;
+  }
+  
+  #explorer-suggestions {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+  
+  .explorer--dropdown-item:hover {
+    background-color: #F1F1F1;
+  }
+  
+  .explorer--dropdown-item {
+    padding: 16px;
+    background: #FFFFFF;
+    box-shadow: inset 0px -1px 0px #F4F4F4;
+  }
+  
+  .explorer--dropdown-item div {
+    pointer-events: none;
+  }
+  
+  .explorer--copyright {
+    background: #FAF8F8;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .explorer--error {
+    padding: 8px 16px;
+    padding-left: 48px;
+    background: #FCEDEC;
+    color: #980500;
+    border: 1px solid rgba(152, 5, 0, 0.3);
+    border-radius: 4px;
+    margin: 8px;
+    background-image: url('https://files.readme.io/62b6781-errorIcon.svg');
+  }
+  
+  .mapboxgl-popup {
+    max-width: 290px !important;
+  }
+  
+  .mapboxgl-popup-content {
+    padding: 0;
+    filter: drop-shadow(0 0 8px rgb(23 20 23 / 10%));
+    border-radius: 4px;
+    min-width: 290px;
+    min-height: 88px;
+  }
+  
+  .explorer--popup {
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+  }
+  
+  .explorer--popup-image {
+    width: 56px;
+    height: 56px;
+    margin: 0 !important;
+  }
+  
+  .explorer--popup-description {
+    margin: 0 8px;
+    /* max-width: 160px; */
+  }
+  
+  .explorer--popup-rating {
+    background: #389E45;
+    border-radius: 4px;
+    height: 24px;
+    min-width: 26px;
+    font-size: 12px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-left: auto;
+  }
